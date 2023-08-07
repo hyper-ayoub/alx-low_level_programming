@@ -1,26 +1,25 @@
-#include <stdio.h>
-
-int print_sign(int n) {
-    if (n > 0) {
-        printf("+");
-        return 1;
-    } else if (n < 0) {
-        printf("-");
-        return -1;
-    } else {
-        printf("0");
-        return 0;
-    }
+#include "main.h"
+/**
+ * print_sign - function to check for a sign of a number
+ * @n:  is the int that will use for the argument of the function
+ * Return: 0
+ */
+int print_sign(int n)
+{
+	if (n > 0)
+	{
+	_putchar('+');
+	return (1);
 }
-
-int main() {
-    int num;
-    printf("Enter a number: ");
-    scanf("%d", &num);
-
-    int result = print_sign(num);
-    printf("\nSign of %d is: %d\n", num, result);
-
-    return 0;
+	else if (n < 0)
+	{
+	_putchar('-');
+	return (-1);
+	}
+	else
+	{
+	_putchar('0');
+	return (0);
+	}
 }
 
