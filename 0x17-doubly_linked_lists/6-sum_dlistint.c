@@ -1,12 +1,13 @@
 #include "lists.h"
 
 /**
- *  sum_dlistint - function that return the sum of all data
- *  @head: pointer to head to the list
- *
- *  Return: the sum of all the data (n) of a dlistint_t
- */
-int sum_dlistint(dlistint_t *head)
+  * get_dnodeint_at_index - returns the nth node of a dlistint_t list.
+  * @head: pointer to head of list.
+  * @index: index of node;
+  *
+  * Return: node at index index or NULL.
+  */
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	dlistint_t *temp;
 
