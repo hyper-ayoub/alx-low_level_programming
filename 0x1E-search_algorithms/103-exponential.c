@@ -1,13 +1,14 @@
 #include "search_algos.h"
 
 /**
-  * 1_binary_search - Searches for a value
+  * _binary_search - Searches for a value
   *
   * @array: A pointer to the first element of the array to search.
   * @left: The starting index of the [sub]array to search.
   * @right: The ending index of the [sub]array to search.
   * @value: The value to search for.
-  * Return: value is not present in array or if array is NULL return -1
+  * Return: value is not present in array
+  * Description: Prints the [sub]array being searched after each change.
   */
 int _binary_search(int *array, size_t left, size_t right, int value)
 {
