@@ -4,6 +4,7 @@
  * print_numbers - function that prints numbers
  * Return: NULL
  */
+
 void print_numbers(void)
 {
     char c;
